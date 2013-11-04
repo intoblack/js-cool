@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>if ... else</title>
+	<script type="text/javascript">
+	// js 字符串 是单引号 这点一定注意 相等 === 
+	// 三个等号
+	// if else 一样
+	function choice ( _choice ) {
+		alert(_choice);
+		taxPercentage = 0.0 ;
+		if (_choice === 'OR') {
+			taxPercentage = 3.5 ;
+
+		}else if (_choice === 'CA') {
+			taxPercentage = 5.0 ;
+
+		}else if ( _choice === 'MO') {
+			taxPercentage = 1.0 ;
+		}else{
+			taxPercentage = 2.0 ;
+		}
+		alert(taxPercentage);
+	}
+	
+	</script>
+</head>
+<body onload="choice('OR')">
+
+</body>
+</html>

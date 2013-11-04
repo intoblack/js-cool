@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>for in</title>
+	<script type="text/javascript">
+	function testForIN () {
+		var myText = {
+			one : "one",
+			two : "two",
+			three : "three"
+			};
+		document.writeln("this is test");
+		document.open()
+		for (var prop in myText) {
+			document.writeln(prop + "<br />");
+		};
+		var arry_test = new Array("one" , "two" ,"three");
+		
+		for( _index in arry_test)
+		{
+			document.writeln("<p>  value :" + arry_test[_index] + "</p>");
+		}
+		
+	}
+
+	</script>
+</head>
+<body onload="testForIN()">
+
+</body>
+</html>

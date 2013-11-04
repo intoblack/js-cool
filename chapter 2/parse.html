@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>parseInt and parseFloat</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript">
+	//<![CDATA[
+	function parseTest() {
+		var sNum = "1.23e-2";
+		document.open();
+		document.writeln("<p>" + parseFloat(sNum) + "</p>");
+		document.writeln("<p>" + parseInt(sNum) + "</p>";
+		var fVlaue = parseFloat("1.45 inch");
+		document.writeln("<p>" + fVlaue + "</p>");
+		document.writeln("<p>" + parseInt(-33.6) + "</p>");
+		document.close();
+	}
+	//]]>
+	</script>
+</head>
+<body onload="parseTest()">
+<p></p>
+</body>
+</html>

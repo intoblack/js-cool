@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>URL Encode and Decode!</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript">
+	function urlencode(_url)
+	{
+		return encodeURIComponent(_url);
+	}
+
+	function urlDecode(_url)
+	{
+		return decodeURI(_url)
+	}
+
+	function show_msg(msg)
+	{
+		document.open();
+		document.writeln(msg);
+		document.close();
+	}
+	</script>
+</head>
+<body onload="show_msg(urlencode('http://www.baidu.com/index.php?pagename=$1'))">
+</body>
+</html>

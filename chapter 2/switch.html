@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>switch</title>
+	<script type="text/javascript">
+	function choice()
+	{
+		var stateCode = 'MO';
+		var statePercent = 0.0 ;
+		var taxPercentage = 0.0;
+
+
+		switch (stateCode)
+		{
+			case 'OR':
+			case 'MA':
+			case 'WI':
+			statePercent = 0.5 ;
+			taxPercentage = 3.5 ;
+			break;
+			case 'MO':
+			statePercent = 1.0 ;
+			taxPercentage = 1.5 ;
+			break ;
+			default:
+			taxPercentage = 2.0 ;
+			statePercent = 2.3 ;
+		}
+		alert("tax is" + taxPercentage + " and state is " + statePercent);
+	}
+
+	</script>
+</head>
+<!-- 调用js 函数的时候 可以 双引号  外加函数名称 参数 -->
+<body onload="choice()">
+
+</body>
+</html>
