@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Params function</title>
+	<script type="text/javascript">
+	function alterArgs(strArgs , arryArgs)
+	{
+		strArgs = "change";
+		arryArgs[1] = "xxxx";
+	}
+
+// 有点像 java 对象传入 则改变属性值
+// string boolean 数字 则不会改变
+	function testParams()
+	{
+		var str = "我";
+		var ary = new Array("one" , "two");
+		document.writeln("test");
+		document.writeln("sstring literal is " + str  + " <br />");
+		document.writeln("Arry object is " + ary + " <br />" );
+		alterArgs(str, ary);
+		document.writeln("sstring literal is " + str  + " <br />");
+		document.writeln("Arry object is " + ary + " <br />" );
+	}
+
+	</script>
+</head>
+
+<body onload="testParams()">
+
+</body>
+</html>
