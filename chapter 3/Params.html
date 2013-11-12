@@ -22,10 +22,17 @@
 		document.writeln("Arry object is " + ary + " <br />" );
 	}
 
+// 这是个内建函数 -》 就是动态生成的函数  ， 函数提 new Function(参数1 , 参数2 , 参数3 ...参数n , 函数体)
+	function bulidinfunction () {
+		var add = new Function("x" , "y" , "return x+y");
+		alert(add(1,2));
+	}
+
 	</script>
 </head>
 
-<body onload="testParams()">
+<body onload="testParams()" >
+
 
 </body>
 </html>
